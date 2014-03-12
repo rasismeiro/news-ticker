@@ -7,7 +7,7 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="format-detection" content="telephone=no" />
         <title>News Ticker example</title>
-        <link href="//raw.github.com/rasismeiro/news-ticker/master/styles.css" rel="stylesheet" type="text/css"/>        
+        <link href="styles.css" rel="stylesheet" type="text/css"/>        
     </head>
 
     <body>
@@ -30,10 +30,10 @@
             </ul>
 
         </div>
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <script type="text/javascript" src="//raw.github.com/rasismeiro/news-ticker/master/jquery.newsticker.min.js"></script>
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.newsticker.min.js"></script>
         <script type="text/javascript">
-            jQuery(window).ready(function($) {
+            jQuery(document).ready(function($) {
               $.newsTicker({
                   link:'#news_links',
                   category:'#news_category',
