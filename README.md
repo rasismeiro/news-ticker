@@ -3,5 +3,5 @@ news-ticker
 
 jQuery plugin - news ticker
 
-== Demo
+## Demo
 http://jsfiddle.net/46P75/1/
