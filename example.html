@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="format-detection" content="telephone=no" />
+        <title>News Ticker example</title>
+        <link href="//raw.github.com/rasismeiro/news-ticker/master/styles.css" rel="stylesheet" type="text/css"/>        
+    </head>
+
+    <body>
+        <div id="news_ticker">
+
+            <ul id="news_label"><li>News</li></ul>
+
+            <ul id="news_category">
+                <li id="catSurf" class="color-cat-futebol">Surf</li>
+                <li id="catCiclismo" class="color-cat-andebol">Ciclismo</li>
+                <li id="catAtletismo"  class="color-cat-hoquei">Atletismo</li>
+                <li id="catTenis" class="color-cat-atletismo">Tenis</li>
+            </ul>
+
+            <ul id="news_links">
+                <li data-target="catTenis"><a href="#1">Federer e Murray nos “oitavos” em Indian Wells</a></li>
+                <li data-target="catAtletismo"><a href="#2">Rasul Dabo enfrenta entre cinco a seis semanas de baixa</a></li>
+                <li data-target="catCiclismo"><a href="#3">Paris-Nice: Portugueses perdem tempo</a></li>
+                <li data-target="catSurf"><a href="#4">Gold Coast:Tiago Pires eliminado por Kelly Slater</a></li>
+            </ul>
+
+        </div>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script type="text/javascript" src="//raw.github.com/rasismeiro/news-ticker/master/jquery.newsticker.min.js"></script>
+        <script type="text/javascript">
+            jQuery(window).ready(function($) {
+              $.newsTicker({
+                  link:'#news_links',
+                  category:'#news_category',
+                  animateSpeed:13333,
+                  animateCategorySpeed:300
+              });
+            });
+        </script>
+
+    </body>
+</html>
